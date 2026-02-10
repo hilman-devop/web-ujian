@@ -1,41 +1,45 @@
-# PKM-Psi: Online Quiz System
+# PKM-Psi: Sistem Kuis Online
 
-A simple PHP-based online quiz platform for educational purposes. Features user authentication, timed quizzes, and admin setup.
+**Platform kuis online berbasis PHP** yang dirancang untuk keperluan pendidikan. Sistem ini menyediakan autentikasi pengguna yang aman, kuis dengan batas waktu, serta panel administrasi untuk pengelolaan konten dan pengguna.
 
-## Features
-- **User Authentication**: Secure login/logout system.
-- **Session Management**: Tracks user progress and quiz attempts.
-- **Responsive Design**: Built with Bootstrap 5 for mobile-friendly interfaces.
-- **Admin Setup**: Configure quizzes and manage users via `setup_admin.php`.
-- **Quiz Submission**: Handles quiz answers and scoring.
+Proyek ini dikembangkan sebagai solusi sederhana, ringan, dan mudah diterapkan di lingkungan pendidikan seperti sekolah atau kursus online.
 
-## Files
-| File                | Description                                  |
-|---------------------|----------------------------------------------|
-| `index.php`         | Dashboard (post-login).                      |
-| `login.php`         | User login page.                             |
-| `logout.php`        | Ends user sessions.                          |
-| `quiz.php`          | Quiz interface and logic.                    |
-| `setup_admin.php`   | Admin configuration (users, quizzes, etc.). |
-| `submit_quiz.php`   | Processes quiz submissions.                  |
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 
-## Requirements
-- PHP 7.4+ (with session support)
-- Web server (Apache/Nginx)
-- MySQL (for user/quiz data, if applicable)
+### 🚀 Fitur Utama
+- **Autentikasi Pengguna**: Sistem login dan logout yang aman dengan proteksi sesi.
+- **Manajemen Sesi**: Pelacakan progres pengguna dan riwayat percobaan kuis.
+- **Desain Responsif**: Antarmuka modern dan mobile-friendly menggunakan Bootstrap 5.
+- **Panel Administrasi**: Pengelolaan pengguna, pembuatan, dan konfigurasi kuis melalui `setup_admin.php`.
+- **Penilaian Otomatis**: Pengolahan jawaban kuis, perhitungan skor, dan penyimpanan hasil.
 
-## Setup
-1. Clone the repository:
+### 📂 Struktur File Utama
+| File                | Deskripsi                                           |
+|---------------------|-----------------------------------------------------|
+| `index.php`         | Halaman dashboard utama setelah login.              |
+| `login.php`         | Halaman autentikasi pengguna.                       |
+| `logout.php`        | Proses penghapusan sesi dan keluar dari sistem.     |
+| `quiz.php`          | Antarmuka dan logika utama kuis.                    |
+| `setup_admin.php`   | Panel administrasi untuk konfigurasi sistem.        |
+| `submit_quiz.php`   | Proses pengumpulan jawaban dan perhitungan skor.     |
+
+### 🛠 Kebutuhan Sistem
+- PHP 7.4 atau lebih baru (dengan dukungan session)
+- Web server (Apache atau Nginx)
+- MySQL/MariaDB (opsional, untuk penyimpanan data pengguna dan kuis)
+
+### 📦 Panduan Instalasi
+1. Clone repository:
    ```bash
-   git clone https://github.com/yourusername/PKM-Psi.git
-   ```
-2. Place the files in your web server directory (e.g., `htdocs` or `/var/www/html`).
-3. Configure the database (if needed) and update connection details in `setup_admin.php`.
-4. Access the system via `http://yourserver/PKM-Psi/login.php`.
+   git clone https://github.com/usernamekamu/PKM-Psi.git
 
-## Usage
-- **Students**: Log in to take quizzes.
-- **Admins**: Use `setup_admin.php` to manage users and quizzes.
+Letakkan semua file di direktori web server (misalnya htdocs pada XAMPP atau /var/www/html pada server produksi).
+Konfigurasi database (jika diperlukan) dan sesuaikan detail koneksi di file setup_admin.php.
+Akses sistem melalui browser:texthttp://localhost/Web-Ujian/login.php
 
-## License
-MIT License. See [LICENSE](LICENSE) for details.
+▶️ Cara Penggunaan
+
+Peserta/Siswa: Login untuk mengakses dan mengerjakan kuis yang tersedia.
+Administrator: Gunakan panel setup_admin.php untuk menambah/mengelola pengguna, membuat kuis baru, dan mengatur pertanyaan.
