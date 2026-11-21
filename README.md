@@ -1,45 +1,57 @@
-# PKM-Psi: Sistem Kuis Online
+# PKM-Psi — Online Quiz System
 
-**Platform kuis online berbasis PHP** yang dirancang untuk keperluan pendidikan. Sistem ini menyediakan autentikasi pengguna yang aman, kuis dengan batas waktu, serta panel administrasi untuk pengelolaan konten dan pengguna.
+![PHP](https://img.shields.io/badge/PHP-2f81f7?style=flat) ![Bootstrap](https://img.shields.io/badge/Bootstrap-2f81f7?style=flat) ![MySQL](https://img.shields.io/badge/MySQL-2f81f7?style=flat) ![Apache](https://img.shields.io/badge/Apache-2f81f7?style=flat)
 
-Proyek ini dikembangkan sebagai solusi sederhana, ringan, dan mudah diterapkan di lingkungan pendidikan seperti sekolah atau kursus online.
+> Sistem ujian sederhana yang dapat dipasang di lingkungan sekolah, kursus, atau server PHP lokal.
 
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+## Tentang proyek
 
-### 🚀 Fitur Utama
-- **Autentikasi Pengguna**: Sistem login dan logout yang aman dengan proteksi sesi.
-- **Manajemen Sesi**: Pelacakan progres pengguna dan riwayat percobaan kuis.
-- **Desain Responsif**: Antarmuka modern dan mobile-friendly menggunakan Bootstrap 5.
-- **Panel Administrasi**: Pengelolaan pengguna, pembuatan, dan konfigurasi kuis melalui `setup_admin.php`.
-- **Penilaian Otomatis**: Pengolahan jawaban kuis, perhitungan skor, dan penyimpanan hasil.
+Sistem ujian sederhana yang dapat dipasang di lingkungan sekolah, kursus, atau server PHP lokal. Dokumentasi ini dibuat sebagai panduan singkat untuk memahami ruang lingkup proyek, menjalankannya secara lokal, dan membaca batasan penggunaannya.
 
-### 📂 Struktur File Utama
-| File                | Deskripsi                                           |
-|---------------------|-----------------------------------------------------|
-| `index.php`         | Halaman dashboard utama setelah login.              |
-| `login.php`         | Halaman autentikasi pengguna.                       |
-| `logout.php`        | Proses penghapusan sesi dan keluar dari sistem.     |
-| `quiz.php`          | Antarmuka dan logika utama kuis.                    |
-| `setup_admin.php`   | Panel administrasi untuk konfigurasi sistem.        |
-| `submit_quiz.php`   | Proses pengumpulan jawaban dan perhitungan skor.     |
+## Fitur utama
 
-### 🛠 Kebutuhan Sistem
-- PHP 7.4 atau lebih baru (dengan dukungan session)
-- Web server (Apache atau Nginx)
-- MySQL/MariaDB (opsional, untuk penyimpanan data pengguna dan kuis)
+- Login dan session management
+- Kuis dengan batas waktu
+- Penilaian otomatis
+- Riwayat percobaan
+- Panel admin untuk pengguna dan soal
+- UI responsif Bootstrap
 
-### 📦 Panduan Instalasi
-1. Clone repository:
-   ```bash
-   git clone https://github.com/usernamekamu/PKM-Psi.git
+## Teknologi
 
-Letakkan semua file di direktori web server (misalnya htdocs pada XAMPP atau /var/www/html pada server produksi).
-Konfigurasi database (jika diperlukan) dan sesuaikan detail koneksi di file setup_admin.php.
-Akses sistem melalui browser:texthttp://localhost/Web-Ujian/login.php
+- PHP
+- Bootstrap
+- MySQL
+- Apache
 
-▶️ Cara Penggunaan
+## Menjalankan secara lokal
 
-Peserta/Siswa: Login untuk mengakses dan mengerjakan kuis yang tersedia.
-Administrator: Gunakan panel setup_admin.php untuk menambah/mengelola pengguna, membuat kuis baru, dan mengatur pertanyaan.
+Prasyarat dan konfigurasi dapat berbeda menurut sistem operasi. Contoh langkah utama:
+
+```bash
+Clone ke document root Apache, siapkan PHP/MySQL, lalu ikuti konfigurasi database di file setup lokal.
+```
+
+## Struktur dan pengembangan
+
+Mulai dari entry point dan folder konfigurasi proyek. Pisahkan credential lokal dari source code, tambahkan test untuk perubahan penting, dan gunakan environment variable untuk konfigurasi deployment.
+
+## Keamanan
+
+- Jangan commit API key, password, token, session ID, atau data pribadi.
+- Gunakan file environment lokal dan contoh konfigurasi tanpa nilai rahasia.
+- Uji perubahan pada environment development sebelum deployment.
+
+## Status
+
+Proyek ini merupakan bagian dari portofolio **Hilman Arifin Ilham** dan dapat dikembangkan sesuai kebutuhan penggunaan.
+
+> **Catatan:** Audit dan ganti seluruh credential administrator sebelum deployment publik. Jangan memakai akun demo di production.
+
+## Lisensi
+
+Belum ada lisensi open-source yang dinyatakan di repository ini. Hubungi pemilik repository sebelum menggunakan ulang atau mendistribusikan kode.
+
+---
+
+Dibuat oleh [Hilman Arifin Ilham](https://github.com/hilman-devop).
